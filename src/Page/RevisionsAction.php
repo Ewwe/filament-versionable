@@ -1,6 +1,6 @@
 <?php
 
-namespace Mansoor\FilamentVersionable\Page;
+namespace Ewwe\FilamentVersionable\Page;
 
 use Filament\Actions\Action;
 use Illuminate\Database\Eloquent\Model;

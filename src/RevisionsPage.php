@@ -1,6 +1,6 @@
 <?php
 
-namespace Mansoor\FilamentVersionable;
+namespace Ewwe\FilamentVersionable;
 
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;

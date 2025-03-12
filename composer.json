@@ -2,19 +2,19 @@
     "name": "ewwe/filament-versionable",
     "description": "This is my package filament-versionable",
     "keywords": [
-        "mansoor",
+        "Ewwe",
         "laravel",
         "filament-versionable"
     ],
-    "homepage": "https://github.com/mansoor/filament-versionable",
+    "homepage": "https://github.com/Ewwe/filament-versionable",
     "support": {
-        "issues": "https://github.com/mansoor/filament-versionable/issues",
-        "source": "https://github.com/mansoor/filament-versionable"
+        "issues": "https://github.com/Ewwe/filament-versionable/issues",
+        "source": "https://github.com/Ewwe/filament-versionable"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Mansoor Ahmed",
+            "name": "Ewwe Ahmed",
             "role": "Developer"
         }
     ],
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Mansoor\\FilamentVersionable\\": "src/",
-            "Mansoor\\FilamentVersionable\\Database\\Factories\\": "database/factories/"
+            "Ewwe\\FilamentVersionable\\": "src/",
+            "Ewwe\\FilamentVersionable\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mansoor\\FilamentVersionable\\Tests\\": "tests/"
+            "Ewwe\\FilamentVersionable\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mansoor\\FilamentVersionable\\FilamentVersionableServiceProvider"
+                "Ewwe\\FilamentVersionable\\FilamentVersionableServiceProvider"
             ],
             "aliases": {
-                "FilamentVersionable": "Mansoor\\FilamentVersionable\\Facades\\FilamentVersionable"
+                "FilamentVersionable": "Ewwe\\FilamentVersionable\\Facades\\FilamentVersionable"
             }
         }
     },

@@ -4,10 +4,10 @@
 
 # Filament Versionable
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mansoor/filament-versionable.svg?style=flat-square)](https://packagist.org/packages/mansoor/filament-versionable)
-[![run-tests](https://github.com/mansoorkhan96/filament-versionable/actions/workflows/run-tests.yml/badge.svg)](https://github.com/mansoorkhan96/filament-versionable/actions/workflows/run-tests.yml)
-[![GitHub Code Style Action Status](https://github.com/mansoorkhan96/filament-versionable/actions/workflows/fix-php-code-styling.yml/badge.svg)](https://github.com/mansoorkhan96/filament-versionable/actions/workflows/fix-php-code-styling.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/mansoor/filament-versionable.svg?style=flat-square)](https://packagist.org/packages/mansoor/filament-versionable)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Ewwe/filament-versionable.svg?style=flat-square)](https://packagist.org/packages/Ewwe/filament-versionable)
+[![run-tests](https://github.com/Ewwekhan96/filament-versionable/actions/workflows/run-tests.yml/badge.svg)](https://github.com/Ewwekhan96/filament-versionable/actions/workflows/run-tests.yml)
+[![GitHub Code Style Action Status](https://github.com/Ewwekhan96/filament-versionable/actions/workflows/fix-php-code-styling.yml/badge.svg)](https://github.com/Ewwekhan96/filament-versionable/actions/workflows/fix-php-code-styling.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/Ewwe/filament-versionable.svg?style=flat-square)](https://packagist.org/packages/Ewwe/filament-versionable)
 
 Efforlessly manage your Eloquent model revisions in Filament. It includes:
 
@@ -22,7 +22,7 @@ Efforlessly manage your Eloquent model revisions in Filament. It includes:
 You can install the package via composer:
 
 ```bash
-composer require mansoor/filament-versionable
+composer require Ewwe/filament-versionable
 ```
 
 Then, publish the config file and migrations:
@@ -56,13 +56,13 @@ class Post extends Model
 }
 ```
 
-Create a Revisons Resource page to show Revisions, it should extend the `Mansoor\FilamentVersionable\RevisionsPage`. If you were to create a Revisions page for `ArticleResource`, it would look like:
+Create a Revisons Resource page to show Revisions, it should extend the `Ewwe\FilamentVersionable\RevisionsPage`. If you were to create a Revisions page for `ArticleResource`, it would look like:
 
 ```php
 namespace App\Filament\Resources\ArticleResource\Pages;
 
 use App\Filament\Resources\ArticleResource;
-use Mansoor\FilamentVersionable\RevisionsPage;
+use Ewwe\FilamentVersionable\RevisionsPage;
 
 class ArticleRevisions extends RevisionsPage
 {
@@ -87,7 +87,7 @@ public static function getPages(): array
 Add `RevisionsAction` to your edit/view pages, this action would only appear when there are any versions for the model you are viewing/editing.
 
 ```php
-use Mansoor\FilamentVersionable\Page\RevisionsAction;
+use Ewwe\FilamentVersionable\Page\RevisionsAction;
 
 protected function getHeaderActions(): array
 {
@@ -100,7 +100,7 @@ protected function getHeaderActions(): array
 You can also add the `RevisionsAction` to your table.
 
 ```php
-use Mansoor\FilamentVersionable\Table\RevisionsAction;
+use Ewwe\FilamentVersionable\Table\RevisionsAction;
 
 $table->actions([
     RevisionsAction::make(),
@@ -155,7 +155,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Mansoor Ahmed](https://github.com/mansoorkhan96)
+- [Ewwe Ahmed](https://github.com/Ewwekhan96)
 - [安正超](https://github.com/overtrue) for [Laravel Versionable](https://github.com/overtrue/laravel-versionable)
 - [All Contributors](../../contributors)
 

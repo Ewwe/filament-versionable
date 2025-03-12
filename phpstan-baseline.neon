@@ -11,12 +11,12 @@ parameters:
 			path: src/Page/RevisionsAction.php
 
 		-
-			message: "#^Call to static method getUrl\\(\\) on an unknown class Mansoor\\\\FilamentVersionable\\\\Page\\\\Filament\\\\Resources\\\\Resource\\.$#"
+			message: "#^Call to static method getUrl\\(\\) on an unknown class Ewwe\\\\FilamentVersionable\\\\Page\\\\Filament\\\\Resources\\\\Resource\\.$#"
 			count: 1
 			path: src/Page/RevisionsAction.php
 
 		-
-			message: "#^PHPDoc tag @var contains unknown class Mansoor\\\\FilamentVersionable\\\\Page\\\\Filament\\\\Resources\\\\Resource\\.$#"
+			message: "#^PHPDoc tag @var contains unknown class Ewwe\\\\FilamentVersionable\\\\Page\\\\Filament\\\\Resources\\\\Resource\\.$#"
 			count: 1
 			path: src/Page/RevisionsAction.php
 
@@ -66,12 +66,12 @@ parameters:
 			path: src/RevisionsPage.php
 
 		-
-			message: "#^Method Mansoor\\\\FilamentVersionable\\\\RevisionsPage\\:\\:diff\\(\\) return type has no value type specified in iterable type array\\.$#"
+			message: "#^Method Ewwe\\\\FilamentVersionable\\\\RevisionsPage\\:\\:diff\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/RevisionsPage.php
 
 		-
-			message: "#^Method Mansoor\\\\FilamentVersionable\\\\RevisionsPage\\:\\:revisionsList\\(\\) return type with generic class Illuminate\\\\Pagination\\\\LengthAwarePaginator does not specify its types\\: TValue$#"
+			message: "#^Method Ewwe\\\\FilamentVersionable\\\\RevisionsPage\\:\\:revisionsList\\(\\) return type with generic class Illuminate\\\\Pagination\\\\LengthAwarePaginator does not specify its types\\: TValue$#"
 			count: 1
 			path: src/RevisionsPage.php
 
@@ -86,11 +86,11 @@ parameters:
 			path: src/Table/RevisionsAction.php
 
 		-
-			message: "#^Call to static method getUrl\\(\\) on an unknown class Mansoor\\\\FilamentVersionable\\\\Table\\\\Filament\\\\Resources\\\\Resource\\.$#"
+			message: "#^Call to static method getUrl\\(\\) on an unknown class Ewwe\\\\FilamentVersionable\\\\Table\\\\Filament\\\\Resources\\\\Resource\\.$#"
 			count: 1
 			path: src/Table/RevisionsAction.php
 
 		-
-			message: "#^PHPDoc tag @var contains unknown class Mansoor\\\\FilamentVersionable\\\\Table\\\\Filament\\\\Resources\\\\Resource\\.$#"
+			message: "#^PHPDoc tag @var contains unknown class Ewwe\\\\FilamentVersionable\\\\Table\\\\Filament\\\\Resources\\\\Resource\\.$#"
 			count: 1
 			path: src/Table/RevisionsAction.php

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mansoor\FilamentVersionable;
+namespace Ewwe\FilamentVersionable;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;

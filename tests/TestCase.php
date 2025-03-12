@@ -1,6 +1,6 @@
 <?php
 
-namespace Mansoor\FilamentVersionable\Tests;
+namespace Ewwe\FilamentVersionable\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -16,7 +16,7 @@ use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
-use Mansoor\FilamentVersionable\FilamentVersionableServiceProvider;
+use Ewwe\FilamentVersionable\FilamentVersionableServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
 
@@ -27,7 +27,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Mansoor\\FilamentVersionable\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Ewwe\\FilamentVersionable\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

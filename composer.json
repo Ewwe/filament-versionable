@@ -1,0 +1,74 @@
+{
+    "name": "ewwe/filament-versionable",
+    "description": "This is my package filament-versionable",
+    "keywords": [
+        "Ewwe",
+        "laravel",
+        "filament-versionable"
+    ],
+    "homepage": "https://github.com/Ewwe/filament-versionable",
+    "support": {
+        "issues": "https://github.com/Ewwe/filament-versionable/issues",
+        "source": "https://github.com/Ewwe/filament-versionable"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ewwe Ahmed",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0",
+        "spatie/laravel-package-tools": "^1.15.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "overtrue/laravel-versionable": "^5.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7|^8",
+        "larastan/larastan": "^2.0",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-arch": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ewwe\\FilamentVersionable\\": "src/",
+            "Ewwe\\FilamentVersionable\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ewwe\\FilamentVersionable\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ewwe\\FilamentVersionable\\FilamentVersionableServiceProvider"
+            ],
+            "aliases": {
+                "FilamentVersionable": "Ewwe\\FilamentVersionable\\Facades\\FilamentVersionable"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
